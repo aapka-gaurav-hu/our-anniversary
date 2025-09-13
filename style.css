@@ -16,7 +16,7 @@
         #mute-btn {
             position: fixed;
             top: 20px;
-            right: 35px;
+            right: 20px;
             background: rgba(0,0,0,0.1);
             border: none;
             color: white;
@@ -298,3 +298,4 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 
         }
+
