@@ -12,7 +12,7 @@
             min-height: 100vh;
             overflow: scroll;
         }
-        #mute-btn {
+/*         #mute-btn {
             position: fixed;
             top: env(safe-area-inset-top, 20px);  /* Adjust for notches */
             right: env(safe-area-inset-right, 20px);
@@ -33,7 +33,7 @@
                 padding: 8px 12px;
                 font-size: 16px;
             }
-        }
+        } */
 
         .slideshow-container {
             position: relative;
@@ -307,5 +307,6 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 
         }
+
 
 
