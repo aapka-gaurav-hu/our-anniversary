@@ -12,7 +12,20 @@
             min-height: 100vh;
             overflow: scroll;
         }
-        
+        /* Mute Button Styling */
+        #mute-btn {
+            position: fixed;
+            top: 20px;
+            right: 35px;
+            background: rgba(0,0,0,0.1);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+        }
         .slideshow-container {
             position: relative;
             width: 100%;
@@ -283,4 +296,5 @@
             font-size: 0.9rem;
             z-index: 1000;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+
         }
