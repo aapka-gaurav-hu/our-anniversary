@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hidden audio player -->
+    <audio id="background-audio" loop muted>
+        <source src="bmg.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Play button shown initially -->
+    <button id="mute-btn">🔇</button>
+
     <div class="slideshow-container">
         <div class="progress-bar" id="progressBar"></div>
         <div class="slide-counter" id="slideCounter">1 / 9</div>
@@ -189,6 +197,19 @@
     </div>
 
     <script>
+        const audio = document.getElementById('background-audio');
+        const muteBtn = document.getElementById('mute-btn');
+        audio.volume = 0.5;
+        muteBtn.addEventListener('click', () => {
+            if (audio.muted) {
+                audio.muted = false;
+                audio.play();
+                muteBtn.textContent = '🔊'; // Sound on
+            } else {
+                audio.muted = true;
+                muteBtn.textContent = '🔇'; // Sound off
+            }
+        });
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
@@ -325,3 +346,4 @@
 </body>
 
 </html>
+
