@@ -12,6 +12,29 @@
             min-height: 100vh;
             overflow: scroll;
         }
+        
+        #mute-btn {
+            position: fixed;
+            top: env(safe-area-inset-top, 20px);
+            right: env(safe-area-inset-right, 20px);
+            background: rgba(0,0,0,0.05);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @media (max-width: 600px) {
+            #mute-btn {
+                top: 15px;
+                right: 35px;
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+        }
 
         .slideshow-container {
             position: relative;
@@ -285,6 +308,7 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 
         }
+
 
 
 
